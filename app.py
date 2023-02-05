@@ -11,9 +11,6 @@ load_dotenv(dotenv_path)
 MONGODB_URI = os.environ.get("MONGODB_URI")
 DB_NAME =  os.environ.get("DB_NAME")
 
-client = MongoClient('mongodb+srv://test:nanda@cluster0.8kafc33.mongodb.net/?retryWrites=true&w=majority')
-db = client.dbdiary
-
 app = Flask(__name__)
 
 
